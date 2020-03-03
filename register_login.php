@@ -21,46 +21,6 @@ if (isset($_SESSION["user"])) {
      <!--/////////////////////////////////////////-->
    </head>
    <body>
-     <div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">
-      <div id="form_login_register">
-        <form id="Register">
-          <h1 id="Title_Register" class="tittle">REGISTER</h1>
-			<div class="row">
-				<div class="col-md-6">
-          <div class="form-group">
-    <label for="exampleInputEmail1" class="inputs_register_login">Nombre</label>
-    <input type="text" class="input_register_login" id="nom" name="nom" placeholder="Nombre...">
-  </div>
-  <div class="form-group">
-<label for="exampleInputEmail1" class="inputs_register_login">Usuario</label>
-<input type="text" class="input_register_login" id="user" name="user" placeholder="Usuario...">
-</div>
-<div class="form-group">
-<label for="exampleInputEmail1" class="inputs_register_login">E-mail</label>
-<input type="email" class="input_register_login" id="e-mail" name="e-mail" placeholder="E-Mail...">
-</div>
-				</div>
-				<div class="col-md-6">
-          <div class="form-group">
-        <label for="exampleInputEmail1" class="inputs_register_login">Apellidos</label>
-        <input type="text" class="input_register_login" id="cognoms" name="cognoms" placeholder="Apellidos...">
-        </div>
-          <div class="form-group">
-        <label for="exampleInputEmail1" class="inputs_register_login">Contraseña</label>
-        <input type="password" class="input_register_login" id="pass" name="pass" placeholder="Contraseña...">
-        </div>
-          <div class="form-group">
-    <label for="exampleInputEmail1" class="inputs_register_login">Instituto</label>
-    <input type="text" class="input_register_login" id="inst" name="inst" placeholder="Instituto...">
-  </div>
-				</div>
-			</div>
-    </form>
-		</div>
-  </div>
-	</div>
-</div>
+     
    </body>
  </html>
