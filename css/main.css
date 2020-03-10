@@ -1,0 +1,108 @@
+* {
+  font-family: URW Chancery L, cursive;
+}
+
+.transitions {
+  -webkit-transition: all 502ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  -moz-transition: all 502ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  -o-transition: all 502ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  transition: all 502ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+}
+
+body {
+  background-color: black;
+}
+
+.title {
+  text-align: center;
+  color: white;
+  font-size: 60px;
+}
+
+.sub-title {
+  text-align: center;
+  color: white;
+  font-size: 35px;
+}
+
+/* BOTON REGISTRO Y LOGIN */
+.button-reg-log {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 170px;
+  height: auto;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0 20px;
+  overflow: hidden;
+  border: none;
+  -webkit-border-radius: 21px;
+  border-radius: 21px;
+  font: normal 35px/normal "Antic", Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: normal;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: rgba(145, 145, 145, 1);
+  -webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5) inset;
+  -webkit-transition: all 502ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  -moz-transition: all 502ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  -o-transition: all 502ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  transition: all 502ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+}
+
+.button-reg-log:hover {
+  color: rgba(255, 255, 255, 1);
+  background: rgba(145, 145, 145, 1);
+  -webkit-transition: all 500ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  -moz-transition: all 500ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  -o-transition: all 500ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  transition: all 500ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+}
+
+.button-reg-log:focus {
+  width: 213px;
+  cursor: default;
+  padding: -13px 20px 0;
+  color: rgba(255, 255, 255, 1);
+  -webkit-transition: all 601ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  -moz-transition: all 601ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  -o-transition: all 601ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  transition: all 601ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+}
+
+.label_form {
+  margin-left: 15%;
+  margin-right: 5%;
+  margin-top: 15%;
+  font-size: 40px;
+  color: white;
+}
+
+/* ----------------------- */
+/* MEDIA QUERYS */
+@media only screen and (max-width: 1024px) and (min-width: 600px) {
+  .title {
+    font-size: 50px;
+  }
+
+  .sub-title {
+    font-size: 25px;
+  }
+
+  .button-reg-log {
+    font-size: 30px;
+  }
+
+  .label_form {
+    font-size: 30px;
+  }
+}
+
+/* ----------- */
