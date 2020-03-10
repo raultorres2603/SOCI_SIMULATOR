@@ -1,5 +1,9 @@
 * {
-  font-family: URW Chancery L, cursive;
+  font-family: Andale Mono, monospace;
+}
+
+#principal-content {
+  opacity: 0;
 }
 
 .transitions {
@@ -25,25 +29,25 @@ body {
   font-size: 35px;
 }
 
-/* BOTON REGISTRO Y LOGIN */
+/* INPUTS REGISTRO Y LOGIN */
 .button-reg-log {
   display: inline-block;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: 170px;
+  width: 150px;
   height: auto;
   cursor: pointer;
   top: 0;
   right: 0;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   padding: 0 20px;
   overflow: hidden;
   border: none;
   -webkit-border-radius: 21px;
   border-radius: 21px;
-  font: normal 35px/normal "Antic", Helvetica, sans-serif;
+  font: normal 35px/normal Andale Mono, monospace;
   color: rgba(0, 0, 0, 1);
   text-decoration: normal;
   -o-text-overflow: ellipsis;
@@ -79,13 +83,50 @@ body {
 
 .label_form {
   margin-left: 15%;
-  margin-right: 5%;
+  margin-right: 4%;
   margin-top: 15%;
   font-size: 40px;
   color: white;
 }
 
 /* ----------------------- */
+/* BOTON REGISTRO Y LOGIN */
+.button-register-login {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 0 20px;
+  border: none;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  font: normal normal bold 60px/80px Andale Mono, monospace;
+  color: black;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgb(221, 221, 221);
+  -webkit-box-shadow: 0 1px 0 0 rgb(119,119,119) , 0 2px 0 0 rgb(119,119,119) , 0 3px 0 0 rgb(119,119,119) , 0 4px 0 0 rgb(119,119,119) , 0 5px 0 0 rgb(119,119,119) , 0 6px 0 0 rgb(119,119,119) , 0 0 5px 0 rgba(0,0,0,0.0980392) , 0 1px 3px 0 rgba(0,0,0,0.298039) , 0 3px 5px 0 rgba(0,0,0,0.2) , 0 5px 10px 0 rgba(0,0,0,0.247059) , 0 10px 10px 0 rgba(0,0,0,0.2) , 0 20px 20px 0 rgba(0,0,0,0.14902) ;
+  box-shadow: 0 1px 0 0 rgb(119,119,119) , 0 2px 0 0 rgb(119,119,119) , 0 3px 0 0 rgb(119,119,119) , 0 4px 0 0 rgb(119,119,119) , 0 5px 0 0 rgb(119,119,119) , 0 6px 0 0 rgb(119,119,119) , 0 0 5px 0 rgba(0,0,0,0.0980392) , 0 1px 3px 0 rgba(0,0,0,0.298039) , 0 3px 5px 0 rgba(0,0,0,0.2) , 0 5px 10px 0 rgba(0,0,0,0.247059) , 0 10px 10px 0 rgba(0,0,0,0.2) , 0 20px 20px 0 rgba(0,0,0,0.14902) ;
+  text-shadow: 0 1px 0 #FFFFFF ;
+  margin-left: 75%;
+  margin-top: 10%;
+}
+
+.button-register-login:hover {
+  background: #FFFFFF;
+}
+
+.button-register-login:active {
+  background: rgb(221, 221, 221);
+  -webkit-box-shadow: 0 -1px 10px 0 rgba(0,0,0,0.247059) , 0 4px 10px 0 rgba(0,0,0,0.2) , 0 14px 20px 0 rgba(0,0,0,0.14902) ;
+  box-shadow: 0 -1px 10px 0 rgba(0,0,0,0.247059) , 0 4px 10px 0 rgba(0,0,0,0.2) , 0 14px 20px 0 rgba(0,0,0,0.14902) ;
+}
+
+.button-register-login:focus {
+  background: rgb(221, 221, 221);
+}
+/* ---------------------- */
 /* MEDIA QUERYS */
 @media only screen and (max-width: 1024px) and (min-width: 600px) {
   .title {
@@ -102,6 +143,10 @@ body {
 
   .label_form {
     font-size: 30px;
+  }
+
+  .button-register-login {
+    font: normal normal bold 50px/70px Andale Mono, monospace;
   }
 }
 
