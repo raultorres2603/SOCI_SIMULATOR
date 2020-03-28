@@ -26,13 +26,14 @@ if (isset($_SESSION["user"])) {
       <h1 class="sub-title transitions">Simulador de Operaciones de Comercio Internacional</h1>
 			<div class="row">
 				<div class="col-md-6">
-          <label class="label_form transitions">Nombre:</label><input type="text" class="button-reg-log transitions" maxlength="10" id="name" name="name">
+          <label class="label_form transitions" id="label1">Nombre:</label><input type="text" class="button-reg-log transitions" maxlength="10" id="name" name="input1">
 				</div>
 				<div class="col-md-6">
-          <label class="label_form transitions">Apellido:</label><input type="text" class="button-reg-log transitions" maxlength="30" id="surname" name="surname">
+          <label class="label_form transitions" id="label2">Apellido:</label><input type="text" class="button-reg-log transitions" maxlength="30" id="surname" name="input2">
 				</div>
 			</div>
-      <button type="button" class="button-register-login transitions">NEXT</button>
+      <input type="text" style="display:none" value="first" id="position">
+      <button type="button" class="button-register-login transitions" onclick="next($('#position').val())">NEXT</button>
 		</div>
 	</div>
 </div>
