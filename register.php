@@ -3,6 +3,7 @@ session_start();
 if (isset($_SESSION["user"])) {
   header("location:./app/menu.php");
 }
+include("./ext/conn.php");
  ?>
  <!DOCTYPE html>
  <html lang="es" dir="ltr">
@@ -26,10 +27,10 @@ if (isset($_SESSION["user"])) {
       <h1 class="sub-title transitions">Simulador de Operaciones de Comercio Internacional</h1>
 			<div class="row">
 				<div class="col-md-6">
-          <label class="label_form transitions" id="label1">Nombre:</label><input type="text" class="button-reg-log transitions" maxlength="10" id="name" name="input1">
+          <label class="label_form transitions" id="label1">Nombre:</label><input type="text" class="button-reg-log transitions" maxlength="10" id="input1" name="input1">
 				</div>
 				<div class="col-md-6">
-          <label class="label_form transitions" id="label2">Apellido:</label><input type="text" class="button-reg-log transitions" maxlength="30" id="surname" name="input2">
+          <label class="label_form transitions" id="label2">Apellido:</label><input type="text" class="button-reg-log transitions" maxlength="30" id="input2" name="input2">
 				</div>
 			</div>
       <input type="text" style="display:none" value="first" id="position">
